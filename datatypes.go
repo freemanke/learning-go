@@ -1,16 +1,17 @@
 package main
 
+import "fmt"
+
 func main() {
 	Constants()
 	BasicTypes()
 	Array()
-
 }
 
 func Constants()  {
 	const name string = "freeman"
 	noname := "ke"
-	println(name, noname)
+	fmt.Println(name, noname)
 }
 
 func BasicTypes()  {
@@ -22,7 +23,7 @@ func BasicTypes()  {
 	var uint32Value uint = 10
 	var uint64Value uint64 = 100
 	var intPointer *int= &number
-	println(number, str, isGood, floatValue, doubleValue, uint32Value, uint64Value, intPointer)
+	fmt.Println(number, str, isGood, floatValue, doubleValue, uint32Value, uint64Value, intPointer)
 }
 
 func Array() {
@@ -32,5 +33,5 @@ func Array() {
 
 	var name = names[1]
 
-	print(names, ages, items, name)
+	fmt.Println(names, ages, items, name)
 }
